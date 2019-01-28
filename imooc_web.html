@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编程挑战</title>
+    <script src="js/myfocus-2.0.1.min.js"></script>
+    <script src="js/mf-pattern/mF_fancy.js"></script>
+    <link href="js/mf-pattern/mF_fancy.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body{
+            width: 1000px;
+            margin: auto;
+        }
+        li{
+            list-style-type: none;
+            text-align: center;
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        p{
+            margin: 0;
+        }
+        .title{
+            width: 1000px;
+            height: 70px;
+            padding-bottom: 5px;
+            margin:auto;
+            /*background-color: darkgreen;*/
+            font-size: 20px;
+        }
+        .title ul{
+            height: 75px;
+        }
+        .title li{
+            height: 70px;
+            display: block;
+            float: left;
+            line-height: 70px;
+            padding: 0 5px;
+
+        }
+        .title img{
+            display: block;
+        }
+        .title a{
+            /*background-color: darkgrey;*/
+            display: inline-block;
+            min-width: 90px;
+        }
+        .title a:hover{
+            background-color: #913037;
+            color: white;
+        }
+        .focus{
+            height: 310px;
+            overflow: hidden;
+        }
+        .rollNews{
+            margin: 20px 0px;
+            height: 48px;
+            background-color: #2A2A2A;
+            color: white;
+            font-size: 20px;
+        }
+        .rollNewsHead{
+            padding: 10px;
+            /*margin: 10px 0;*/
+            background-color: #913037;
+            float: left;
+        }
+        .rollnews{
+            height: 48px;
+            padding: 0 10px;
+            float: left;
+            line-height: 48px;
+            animation: roll 5s;
+            -moz-animation:roll 5s;
+        }
+        @keyframes roll {
+            from{float: right}
+            to{float: left}
+        }
+        @-moz-keyframes roll {
+            from{float: right}
+            to{float: left}
+        }
+
+        .imgTextTogether{
+            float: left;
+            margin: 1.5px;
+        }
+        .imgText{
+            margin-top: -5px;
+            border: 1px solid #e8e8e8;
+            text-align: center;
+        }
+
+        .bottomDiv{
+            padding-top: 20px;
+            clear: both;
+        }
+        .newsCenter, .popularEvents, .contactUs{
+            float: left;
+            width: 328px;
+            height: 350px;
+            /*padding: 0 9px;*/
+            border: 1px solid #e8e8e8;
+            margin: 1px;
+        }
+
+        .divTitle{
+            color: white;
+            background: #913037;
+            text-align: left;
+            padding: 5px 20px;
+        }
+        .date{
+            color: white;
+            background-color: #913037;
+            border-radius: 4px;
+            float: left;
+            padding: 20px;
+            margin: 10px 5px;
+        }
+        .news{
+            height: 105px;
+        }
+        .new{
+            padding-top: 10px;
+        }
+        .new a{
+            font-size: 13px;
+        }
+        .new p{
+            font-size: 12.5px;
+        }
+
+        .popularEvents img{
+            display: block;
+            margin: auto;
+        }
+        .lecturer, .cooperation{
+            padding: 10px;
+        }
+        .bottomBar{
+            clear: both;
+            background-color: #e8e8e8;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+    <script type="text/javascript">
+        myFocus.set({
+            id:'picBox'
+        })
+    </script>
+</head>
+<body>
+<div class="title">
+    <ul>
+        <li><a href="#"><img src="http://img.mukewang.com/53edadad0001efe202000070.jpg"></a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">产品特色</a></li>
+        <li><a href="#">解决方案</a></li>
+        <li><a href="#">产品价格</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+</div>
+<div class="focus" id="picBox">
+    <div class="loading"><img src="http://img.mukewang.com/53edad8c000175cb00300029.jpg" alt="图片加载中..."></div>
+    <div class="pic">
+        <ul>
+            <li><img src="http://img.mukewang.com/53edad1600019ae910000310.jpg"></li>
+            <li><img src="http://img.mukewang.com/53edad2c0001b61310000314.jpg"></li>
+            <li><img src="http://img.mukewang.com/53edad3e0001afad10000318.jpg"></li>
+        </ul>
+    </div>
+</div>
+<div class="rollNews">
+    <div class="rollNewsHead">滚动新闻</div>
+    <div class="rollnews">这是滚动新闻</div>
+</div>
+<div class="imgHyperlink">
+    <div class="imgTextTogether">
+        <img src="http://img.mukewang.com/53edad54000119fb03300130.jpg" alt="玩转BootStrap">
+        <div class="imgText">玩转BootStrap</div>
+    </div>
+    <div class="imgTextTogether">
+        <img src="http://img.mukewang.com/53edad690001260a03300130.jpg" alt="企业网站案例">
+        <div class="imgText">企业网站案例</div>
+    </div>
+    <div class="imgTextTogether">
+        <img src="http://img.mukewang.com/53edad7a0001cde803300130.jpg" alt="Javascript基础">
+        <div class="imgText">Javascript基础</div>
+    </div>
+</div>
+
+<div class="bottomDiv">
+    <div class="newsCenter">
+        <div class="divTitle">新闻中心</div>
+        <div class="news">
+            <div class="date">8月<br>23日</div>
+            <div class="new">
+                <b><a>学习计划之“Android攻城狮初养成”</a></b>
+                <p>想成为Android攻城狮？想开发一款专属App？没有任何基础的你，应该从何学起？</p>
+            </div>
+        </div>
+        <div class="news">
+            <div class="date">8月<br>23日</div>
+            <div class="new">
+                <b><a>学习计划之“Android攻城狮初养成”</a></b>
+                <p>想成为Android攻城狮？想开发一款专属App？没有任何基础的你，应该从何学起？</p>
+            </div>
+        </div>
+        <div class="news">
+            <div class="date">8月<br>23日</div>
+            <div class="new">
+                <b><a>学习计划之“Android攻城狮初养成”</a></b>
+                <p>想成为Android攻城狮？想开发一款专属App？没有任何基础的你，应该从何学起？</p>
+            </div>
+        </div>
+    </div>
+    <div class="popularEvents">
+        <div class="divTitle">热门活动</div>
+        <img src="http://img.mukewang.com/53edacdd0001b8e804820302.jpg" width="300">
+        <p>慕课网2048游戏源码征集</p>
+        <p>慕课网2048游戏源码征集</p>
+        <p>慕课网2048游戏源码征集</p>
+        <p>慕课网2048游戏源码征集</p>
+        <p>慕课网2048游戏源码征集</p>
+    </div>
+    <div class="contactUs">
+        <div class="divTitle">联系我们</div>
+        <div class="lecturer">
+            <p>讲师招募</p>
+            <p>邹同学</p>
+            <p>电话：18911888156</p>
+            <p>QQ:576264119</p>
+            <p>E-mail：daisy@imooc.com</p>
+        </div>
+        <div class="cooperation">
+            <p>网站合作</p>
+            <p>吕同学</p>
+            <p>电话：13261771103</p>
+            <p>QQ:1059809142</p>
+            <p>E-mail：lvyang@imooc.com</p>
+        </div>
+    </div>
+</div>
+<div class="bottomBar">
+    <p>Copyright © 2013 imooc.com All Rights Reserved 京ICP备 13046642号-2</p>
+</div>
+</body>
+</html>
